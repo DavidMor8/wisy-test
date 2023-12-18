@@ -1,0 +1,44 @@
+body{
+    color: black;
+    
+    
+}
+
+.content{
+    height: 50vh;
+}
+.chart-container{
+   
+    padding-left: 5px;
+}
+
+.content-container{
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    justify-items: center;
+    align-items: center;
+}
+.temperature-list{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color:black;
+}
+.buttons{
+    padding-top: 20px;
+}
+
+button{
+    display: flex;
+    justify-content: end;
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 10px; 
+    border-radius: 5px;
+    text-align: end;
+    outline: none; 
+   
+   
+}

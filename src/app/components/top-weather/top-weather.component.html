@@ -1,0 +1,25 @@
+<div class="content">
+    <div class="chart-container" >
+        <app-line-chart *ngIf="weatherData && weatherData.properties && weatherData.properties.periods"
+                        [chartData]="getChartData(weatherData.properties.periods)">
+        </app-line-chart>
+    </div>
+    <div class="content-container">
+        <div class="temperature-list">
+            <h3>Temperature Values per Day</h3>
+            <ul>
+              <li *ngFor="let period of weatherData?.properties?.periods">
+                <span>{{ period.temperature }}°F -  {{ period.number }} -  {{ period.name }}</span>
+              </li>
+            </ul>
+          </div>
+    
+        <div class="buttons">
+            <button (click)="goToHomePage()">Go to Home page</button>
+        </div>
+    
+    </div>
+     
+        
+</div>  
+   

@@ -1,0 +1,31 @@
+
+<div class="main-container">
+  <div class="image">
+    <img src="assets/climate.jpg" alt="">
+  </div>
+  <div class="content-container">
+    <div class="title">
+      <h1>To check the weather, you <br>are in the right place.</h1>
+      <h1 id="title">The WeatherApp</h1>
+    </div>
+    <div class="opt-menu">
+      <div class="dropdown">
+        <select [(ngModel)]="selectedLocation">
+          <option value="" disabled selected>Select location </option>
+          <option value="Kansas">Kansas</option>
+          <option value="Columbia">Columbia</option>
+        </select>
+      </div>
+        <div class="buttons">
+          <button (click)="getWeather()">Check weather</button>
+        </div>
+    </div>
+      
+      
+  </div>
+ 
+</div>
+  
+
+   
+ 
